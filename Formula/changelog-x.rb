@@ -1,7 +1,6 @@
 class ChangelogX < Formula
   desc "Generate high-quality changelogs from conventional commits with AI enhancement"
   homepage "https://github.com/maikbasel/changelog-x"
-  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/maikbasel/changelog-x/releases/download/v0.1.1/changelog-x-aarch64-apple-darwin.tar.xz"
