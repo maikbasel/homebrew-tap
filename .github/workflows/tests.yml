@@ -42,7 +42,13 @@ jobs:
 
       - run: brew test-bot --only-setup
 
-      - run: brew test-bot --only-tap-syntax
+      # Equivalent to `brew test-bot --only-tap-syntax`, but the audit skips the
+      # `version` check. cargo-dist hardcodes an explicit `version` in the
+      # generated formula; newer Homebrew scans the same version from the URL and
+      # audits it as redundant. There is no cargo-dist knob to drop it, so skip
+      # only that check while keeping style + every other audit as a real gate.
+      - run: brew style maikbasel/homebrew-tap
+      - run: brew audit --tap=maikbasel/homebrew-tap --except=version
       - run: brew test-bot --only-formulae
         if: github.event_name == 'pull_request'
 
