@@ -1,25 +1,25 @@
 class Repograph < Formula
   desc "CLI for registering, grouping, and exposing local git repositories as structured context for AI agents."
   homepage "https://github.com/maikbasel/repograph"
-  version "0.2.1"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.2.1/repograph-aarch64-apple-darwin.tar.xz"
-      sha256 "96126740729b86e9417d088c2c1303135ace65442f5fd558f72ad1e123df5f27"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.0/repograph-aarch64-apple-darwin.tar.xz"
+      sha256 "9e3db4a6d4c5e28978e2bd44f5b6e5d1f2d04171affdbddad7952d3fc8f74ef5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.2.1/repograph-x86_64-apple-darwin.tar.xz"
-      sha256 "9f6d3db2e765b9cf6d7c5d048d39e72813d72183cf37b448a70da4995de427c6"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.0/repograph-x86_64-apple-darwin.tar.xz"
+      sha256 "3c8a5f61d1103fb6fd9a13a7dc7acc1821ed0b3ee4aa4f397d305745c762e949"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.2.1/repograph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9f36fe61edb12c436a94a18653196b291842871820c3315bdd433160b23b94de"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.0/repograph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "612d4d5254deb36168e89e5eb37ee62bad6fd07afe2b2c5eb84180d64ba86acf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.2.1/repograph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "1693fce1e87f8146d3c2afc162389865b8cb848f7281d5891b895bf15fd6c7f7"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.0/repograph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "abeeb3c536e9fb5fefd1454ef5a3b635a7f2c6e5686d3b45d5c10d7f9cfd96a4"
     end
   end
   license "MIT"
