@@ -24,6 +24,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      # Recent Homebrew needs a rootless `bwrap` for the Linux sandbox; the
+      # ubuntu runner image doesn't ship it, so `brew doctor` (run by
+      # `brew test-bot --only-setup`) fails. Install it on Linux only.
+      - name: Install bubblewrap (Linux sandbox dependency)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y bubblewrap
+
       - name: Cache Homebrew Bundler RubyGems
         uses: actions/cache@v4
         with:
