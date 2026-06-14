@@ -23,7 +23,7 @@ class RepographAT030 < Formula
     end
   end
   license "MIT"
-  keg_only :versioned_formula
+  keg_only "it conflicts with the unversioned `repograph` formula, which installs the same binary"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
@@ -63,5 +63,9 @@ class RepographAT030 < Formula
     # Install any leftover files in pkgshare; these are probably config or
     # sample files.
     pkgshare.install(*leftover_contents) unless leftover_contents.empty?
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/repograph --version")
   end
 end
