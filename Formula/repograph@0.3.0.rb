@@ -23,6 +23,7 @@ class RepographAT030 < Formula
     end
   end
   license "MIT"
+  keg_only :versioned_formula
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
