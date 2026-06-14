@@ -1,25 +1,25 @@
 class Repograph < Formula
-  desc "CLI for registering, grouping, and exposing local git repositories as structured context for AI agents."
+  desc "Register, group, and expose local git repos as structured context for AI agents"
   homepage "https://github.com/maikbasel/repograph"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.0/repograph-aarch64-apple-darwin.tar.xz"
-      sha256 "9e3db4a6d4c5e28978e2bd44f5b6e5d1f2d04171affdbddad7952d3fc8f74ef5"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.1/repograph-aarch64-apple-darwin.tar.xz"
+      sha256 "37370a103083bbf80a190d40f78fe3fa91a1a24297a814070d54abc3851a1c4b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.0/repograph-x86_64-apple-darwin.tar.xz"
-      sha256 "3c8a5f61d1103fb6fd9a13a7dc7acc1821ed0b3ee4aa4f397d305745c762e949"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.1/repograph-x86_64-apple-darwin.tar.xz"
+      sha256 "124a13445300ab46c3800ae15d125bc1a5631df0a4e03d78b26e25176b1df351"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.0/repograph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "612d4d5254deb36168e89e5eb37ee62bad6fd07afe2b2c5eb84180d64ba86acf"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.1/repograph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "cc3fc2b3ca4fb16bdab4df7be7ce8c224681f8f1af006c897de46a947e404956"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.0/repograph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "abeeb3c536e9fb5fefd1454ef5a3b635a7f2c6e5686d3b45d5c10d7f9cfd96a4"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.1/repograph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4fc8b1a466f940bc8848324129a5864bfd66875e1fe1a6553afa64a0616e329a"
     end
   end
   license "MIT"
