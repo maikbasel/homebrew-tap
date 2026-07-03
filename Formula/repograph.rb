@@ -1,25 +1,25 @@
 class Repograph < Formula
   desc "Register, group, and expose local git repos as structured context for AI agents"
   homepage "https://github.com/maikbasel/repograph"
-  version "0.3.1"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.1/repograph-aarch64-apple-darwin.tar.xz"
-      sha256 "37370a103083bbf80a190d40f78fe3fa91a1a24297a814070d54abc3851a1c4b"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.4.0/repograph-aarch64-apple-darwin.tar.xz"
+      sha256 "75c52d3dea842d8006c11761301dcc85505546b9ac32e98d0c53a287e6788b2d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.1/repograph-x86_64-apple-darwin.tar.xz"
-      sha256 "124a13445300ab46c3800ae15d125bc1a5631df0a4e03d78b26e25176b1df351"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.4.0/repograph-x86_64-apple-darwin.tar.xz"
+      sha256 "eda91d51906ea35b92bce9c19954ea6f91c83cd092f66185f08dc187132eee36"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.1/repograph-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "cc3fc2b3ca4fb16bdab4df7be7ce8c224681f8f1af006c897de46a947e404956"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.4.0/repograph-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a783e83b76806bfd3a0b3dc305496cc9cc62e7e69ba0e7302158233e1d7683b0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.3.1/repograph-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4fc8b1a466f940bc8848324129a5864bfd66875e1fe1a6553afa64a0616e329a"
+      url "https://github.com/maikbasel/repograph/releases/download/repograph-v0.4.0/repograph-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b94ecf50c622567b35fd51af0793dc0d3d251b980591546c5c3c3d6fb31e95fc"
     end
   end
   license "MIT"
